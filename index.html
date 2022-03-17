@@ -21,22 +21,20 @@
             </div>
             <form id='loginForm'>
                 <div class="mt-5">
-                    <input type="email" class="form-control my-5" placeholder="Correo Electrónico">
-                    <input type="password" class="form-control my-5" placeholder="Contraseña">
+                    <input id="email" type="email" class="form-control my-5" placeholder="Correo Electrónico" required>
+                    <input id="password" type="password" class="form-control my-5" placeholder="Contraseña" required>
                 </div>
                 <div class='mt-5'>
                     <center>
-                        <button  class='btn btn-primary'>Ingresar</button>
+                        <button class='btn btn-primary'>Ingresar</button>
                     </center>
                 </div>
             </form>
-            <div class="mt-4 text-end">
-                <span>¿Aún no tienes cuenta ? registrate <a href="">aquí</a></span>
-            </div>
         </div>
     </div>
-
-<script src="./scripts/login.js" type="module"></script>
+ 
+    <script src="./scripts/login.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
