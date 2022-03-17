@@ -1,6 +1,8 @@
 import { showCards } from "../modules/showCard.js";
 
 let contenedorFrutas = document.getElementById('containerFruta');
+let contenedorLeche = document.getElementById('containerLeche');
+let contenedorPopsy =  document.getElementById('containerPopsy');
 
 document.addEventListener('DOMContentLoaded', async () => {
     let res = await fetch('http://localhost:4000/paletas');
@@ -10,7 +12,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     let paletasPopsy = data.filter(item => item.categorie == 'popsy');
     let paletasLeche = data.filter(item => item.categorie == 'leche');
 
-    console.log(paletasFruta)
-   showCards(paletasFruta, contenedorFrutas)
+   showCards(paletasFruta, contenedorFrutas);
+   showCards(paletasLeche, contenedorLeche);
+   showCards(paletasPopsy, contenedorPopsy);
 
 }) 
